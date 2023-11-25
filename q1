@@ -1,0 +1,4 @@
+name = 'Hi ansal'
+print("1,2,3")
+print(len(name))
+print((name.find('s'))-1)

@@ -1,0 +1,50 @@
+https://www.crio.do/blog/vs-code-shortcuts/
+
+
+
+Ctrl+/               Toggle line comment   " # "
+Alt+ ↑ / ↓           Move line up/down
+Shift+Alt + ↓ / ↑    Copy line up/down
+Ctrl+Shift+K         Delete line
+Home /End            Go to beginning/end of line
+Ctrl+Shift+left/right arrow  select word by word
+Ctrl+B     Toggle sidebar
+Ctrl+Alt left/right arrow   shring or expand
+Ctrl+K    code formatting
+Ctrl+L    seclect current line
+Ctrl+tab  jump one file to another 
+
+
+Terminal command
+ls  -> to view file in folder
+cp  -> to duplicate a specific file and rename
+   sample1.py
+   cp sample1.py duplicate.py
+   it create duplicate.py as a additional file
+
+mv  -> change file name
+    mv sample1.py newname.py
+
+
+
+git command :
+
+    git config --help
+    git config -help 
+    git clone
+      
+
+
+
+create virtual environment
+
+    install  -> pip install virtualenv
+    create environment -> python -m venv <venv_name>   
+    avtivate -> venv\Scripts\activate
+    deactivate -> deactivate
+
+
+
+
+value error :
+    it happens when datatype has been used incorrectly

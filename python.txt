@@ -1,0 +1,104 @@
+pep 8 -- > python enhancment proposal
+python no need compiler compiler to run 
+     --> python code is fast to develope 
+     --> python code is not as fast in excution
+                       --> because an additional layer of python virtual machine is responsible for the excetion of code
+
+Static typed language :
+        Data Type are checked before execution 
+Dynamic typed language :
+        Data type are checked during execution
+is indentation required ?
+       it provide better readability
+kewords :
+    --> False ,True ,from ,or ,None ,elif ,and ,import ,pass ,with
+
+Data Type in python :
+     --> str ,int ,float ,complex ,list ,tuple ,range ,dic ,set ,bool ,None
+
+list :
+    --> it defined in square bracket
+    --> it is orded 
+    --> it is mutable 
+    --> we can add different datatype
+     --> indicies is used to access the the file
+
+Dictionary :
+    --> Unorder collection of item
+    --> each item have key/value
+    --> we cannot access them using indicies
+
+Iteration :
+     --> Objects like list ,turple ,sets ,dictionary ,string etc.
+
+Function :
+     --> 
+Object Oriented Programming :
+
+     --> Class 
+     --> Object
+     --> Encapsulation
+     --> Inheritance
+     --> Polimorphism
+     --> Abstraction
+
+Class :
+A class is a collection of instance variables and related methods that define a particular object type. You can think of a class as an object's blueprint or template. 
+Attributes are the names given to the variables that make up a class. A class instance with a defined set of properties is called an object. As a result, the same class can be used to construct as many objects as needed.
+
+Encapsulation :
+            Encapsulation is the process of preventing clients from accessing certain properties, which can only be accessed through specific methods.
+
+               --> Public  
+                            self.c = 10
+               --> protected
+                            self._c = 10
+               --> Private
+                            self.__c = 10
+
+Inheritance :
+          It is a mechanism that allows you to create a hierarchy of classes that share a set of properties and methods by deriving a class from another class. 
+          Inheritance is the capability of one class to derive or inherit the properties from another class. 
+
+# Python code to demonstrate how parent constructors
+# are called.
+
+# parent class
+class Person(object):
+
+	# __init__ is known as the constructor
+	def __init__(self, name, idnumber):
+		self.name = name
+		self.idnumber = idnumber
+
+	def display(self):
+		print(self.name)
+		print(self.idnumber)
+
+# child class
+class Employee(Person):
+	def __init__(self, name, idnumber, salary, post):
+		self.salary = salary
+		self.post = post
+
+		# invoking the __init__ of the parent class
+		Person.__init__(self, name, idnumber)
+
+# creation of an object variable or an instance
+a = Employee('Rahul', 886012, 200000, "Intern")
+
+# calling a function of the class Person using its instance
+a.display()
+
+Polimorphism :
+              The word polymorphism means having many forms. In programming, polymorphism means the same function name (but different signatures) being used for different types. 
+              The key difference is the data types and number of arguments used in function.
+              https://www.geeksforgeeks.org/polymorphism-in-python/
+
+Abstraction :
+                Abstraction is a fundamental concept in object-oriented programming that allows us to hide the implementation details of a program from the user. 
+In Python, abstraction can be achieved through abstract classes and interfaces. Abstract classes are classes that cannot be instantiated and are used to define a blueprint for other classes to follow. 
+Interfaces, on the other hand, are used to define a set of methods that must be implemented by any class that implements the interface.
+
+Sorting :
+https://www.baeldung.com/cs/choose-sorting-algorithm
